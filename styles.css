@@ -1,0 +1,11 @@
+#contacto{
+    height: 250px;
+    align-content: center;
+}
+.carousel-item {
+    display: none;
+  }
+
+  .carousel-item.active {
+    display: block;
+  }
