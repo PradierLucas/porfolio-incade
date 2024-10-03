@@ -9,3 +9,6 @@
   .carousel-item.active {
     display: block;
   }
+header{
+  width: 100%;
+}

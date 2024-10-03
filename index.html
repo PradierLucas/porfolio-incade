@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="bg-black text-white body-font">
+  <header class="bg-black  text-white fixed body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center \ mb-4 md:mb-0">
         <h1 class="ml-3 \">Portfolio</h1>
@@ -48,12 +48,16 @@
               <p class="text-base">Desarrollador web apasionado por la tecnología y el diseño.</p>
             </div>
           </div>
-          <div
-            class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p class="leading-relaxed text-lg mb-4">Me especializo en crear experiencias web dinámicas utilizando HTML,
-              CSS, JavaScript y frameworks modernos como React. Me encanta el desarrollo frontend y mejorar
-              continuamente mis habilidades.</p>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t sm:mt-0 text-center sm:text-left">
+            <h2 class="text-2xl font-bold text-black  mb-4">Sobre mí</h2>
+            <p class="leading-relaxed text-lg">
+              Soy un desarrollador full-stack con experiencia en la creación de aplicaciones web escalables y de alto rendimiento. Mi enfoque abarca tanto frontend como backend, utilizando tecnologías como React, Node.js, y bases de datos relacionales y no relacionales.
+            </p>
+            <p class="leading-relaxed text-lg mt-4">
+              Me apasiona optimizar procesos y crear experiencias de usuario fluidas. Siempre estoy en busca de nuevos retos que me permitan seguir aprendiendo y mejorando mis habilidades.
+            </p>
           </div>
+          
         </div>
       </div>
      
@@ -117,7 +121,7 @@
               <h2 class="text-xl font-medium title-font text-gray-900 mb-3">Sistema Gestion Escolar</h2>
 
               <a href="https://github.com/PradierLucas/SistemaGestionEscolar"
-                class="text-indigo-500 inline-flex items-center">Saber mas</a>
+                class="text-indigo-500 inline-flex items-center" target="_blank">Saber mas</a>
             </div>
           </div>
         </div>
@@ -131,7 +135,7 @@
               <h2 class="text-xl font-medium title-font text-gray-900 mb-3">Bot Whatsapp</h2>
 
               <a href="https://github.com/PradierLucas/bot-whatsapp"
-                class="text-indigo-500 inline-flex items-center">Saber mas</a>
+                class="text-indigo-500 inline-flex items-center" target="_blank">Saber mas</a>
             </div>
           </div>
         </div>
@@ -144,7 +148,7 @@
               <h2 class="text-xl font-medium title-font text-gray-900 mb-3">Agenda</h2>
 
               <a href="https://github.com/PradierLucas/INCADE-POO/tree/main/agendabd"
-                class="text-indigo-500 inline-flex items-center">Saber mas</a>
+                class="text-indigo-500 inline-flex items-center" target="_blank">Saber mas</a>
             </div>
           </div>
         </div>
@@ -180,15 +184,8 @@
   </footer>
   
 
-  <!-- Botón para scroll hacia arriba -->
-  <button onclick="scrollToTop()" class="fixed bottom-4 right-4 bg-indigo-500 p-3 rounded-full text-white">⬆️</button>
 
-  <script>
-      // Scroll hacia arriba
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
+  
 </body>
 
 </html>
