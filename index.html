@@ -16,18 +16,36 @@
 
 <body>
 
-<!-- Header con botón para abrir el drawer -->
-<header >
-  <h1>Portfolio</h1>
- 
-  <nav class="desktop-menu">
-    <a href="#sobremi">Sobre Mi</a>
-    <a href="#skills">Skills</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
 
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Título del portfolio (solo en pantallas grandes) -->
+      <h1 class="leading-relaxed text-2xl hidden md:block">Portfolio</h1>
+  
+      <!-- Icono de menú hamburguesa -->
+      <button id="menu-toggle" class="text-2xl md:hidden focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Menú de navegación (pantallas grandes) -->
+      <nav id="menu" class="desktop-menu hidden md:flex space-x-4 leading-relaxed text-2xl">
+        <a href="#sobremi" class="hover:text-blue-500">Sobre Mi</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#proyectos" class="hover:text-blue-500">Proyectos</a>
+        <a href="#contacto" class="hover:text-blue-500">Contacto</a>
+      </nav>
+    </div>
+  
+    <!-- Menú cajón en pantallas pequeñas, centrado -->
+    <nav id="mobile-menu" class="hidden fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center space-y-6 text-3xl">
+      <a href="#sobremi" class="block py-2 hover:text-blue-500">Sobre Mi</a>
+      <a href="#skills" class="block py-2 hover:text-blue-500">Skills</a>
+      <a href="#proyectos" class="block py-2 hover:text-blue-500">Proyectos</a>
+      <a href="#contacto" class="block py-2 hover:text-blue-500">Contacto</a>
+    </nav>
+  </header>
+  
+  
 
 
   <section id="sobremi" class=" bg-blue-400 fade text-gray-600 body-font ">
@@ -37,8 +55,8 @@
 
         <div class="flex flex-col sm:flex-row mt-10 ">
           <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-            <div class="w-50 h-50 rounded-full overflow-hidden inline-flex items-center justify-center bg-gray-200">
-              <img src="20211103_111738 (1).jpg" alt="Imagen redondeada" class="w-full h-full object-cover">
+            <div class="w-50 h-50 rounded-full overflow-hidden bg-transparent inline-flex items-center justify-center ">
+              <img src="20211103_111738__1_-removebg-preview.png" alt="Imagen redondeada" class="w-full h-full object-cover">
             </div>
             
             <div class="flex p-5 flex-col items-center text-center justify-center">
@@ -47,11 +65,11 @@
             </div>
           </div>
           <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t p-5  sm:mt-0 text-center sm:text-left">
-            <h2 class="text-2xl font-bold text-black  mb-4">Sobre mí</h2>
-            <p class="leading-relaxed text-xl ">
+            <h2 class="text-5xl font-bold text-black  mb-6">Sobre mí</h2>
+            <p class="leading-relaxed text-gray-800 text-2xl ">
               Soy un desarrollador full-stack con experiencia en la creación de aplicaciones web escalables y de alto rendimiento. Mi enfoque abarca tanto frontend como backend, utilizando tecnologías como React, Node.js, y bases de datos relacionales y no relacionales.
             </p>
-            <p class="leading-relaxed text-xl mt-4">
+            <p class="leading-relaxed text-gray-800 text-2xl">
               Me apasiona optimizar procesos y crear experiencias de usuario fluidas. Siempre estoy en busca de nuevos retos que me permitan seguir aprendiendo y mejorando mis habilidades.
             </p>
           </div>
@@ -65,11 +83,11 @@
   <section id="skills" class="bg-blue-300 text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-bold mb-4 text-gray-900">Skills</h1>
+        <h1 class="text-5xl  mb-6 font-bold text-gray-900">Skills</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-base">Tecnologías con las que trabajo regularmente</p>
       </div>
       <div class="flex flex-wrap -m-4 text-center">
-        <!-- Primer conjunto de skills -->
+     
         <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
           <div class="border-2 border-gray-200 px-4 py-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-100">
             <i class="fab fa-3x fa-html5 text-black w-12 h-12 mb-3 inline-block"></i>
@@ -99,7 +117,7 @@
           </div>
         </div>
   
-        <!-- Segundo conjunto de skills (más pequeñas) -->
+      
         <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
           <div class="border-2 border-gray-200 px-4 py-4 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-100">
             <i class="fas fa-database fa-2x text-black w-10 h-10 mb-3 inline-block"></i>
@@ -135,10 +153,10 @@
   
 
 
-  <section id="proyectos" class="text-white-200 bg-blue-200 body-font">
+  <section id="proyectos" class="text-white-200  bg-blue-200 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-bold  mb-4 text-gray-900">Proyectos</h1>
+        <h1 class="text-5xl font-bold mb-6 text-gray-900">Proyectos</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-base">Algunas de mis experiencias en desarrollo</p>
 
       </div>
@@ -187,25 +205,25 @@
     </div>
   </section>
 
-  <section id="contacto" class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-6">Contacto</h2>
-      <div class="flex justify-center space-x-6">
-        <a href="mailto:tuemail@correo.com" target="_blank" class="text-2xl transition-colors duration-300 hover:text-blue-500">
-          <i class="fas fa-envelope fa-lg"></i>
+  <section id="contacto" class="bg-gray-900  text-white py-8">
+    <div class="container p-3 mx-auto text-center">
+      <h2 class="text-5xl  mb-6">Contactame</h2>
+      <br>
+      <div class="flex justify-center p-5 space-x-6">
+        <a href="https://https://web.whatsapp.com/" target="_blank" class="text-2xl transition-colors p-2 duration-300 hover:text-blue-500">
+          <i class="fab fa-whatsapp fa-2xl"></i>
         </a>
-        <a href="https://github.com/PradierLucas" target="_blank" class="text-2xl transition-colors duration-300 hover:text-blue-500">
-          <i class="fab fa-github fa-lg"></i>
+        <a href="mailto:lucaspradier73@gmail.com" target="_blank" class="text-2xl transition-colors p-2 duration-300 hover:text-blue-500">
+          <i class="fas fa-envelope fa-2xl"></i>
         </a>
-        <a href="https://linkedin.com/in/tu_perfil" target="_blank" class="text-2xl transition-colors duration-300 hover:text-blue-500">
-          <i class="fab fa-linkedin fa-lg"></i>
+        <a href="https://linkedin.com/in/tu_perfil" target="_blank" class="text-2xl transition-colors p-2 duration-300 hover:text-blue-500">
+          <i class="fab fa-linkedin fa-2xl"></i>
         </a>
-        <a href="https://instagram.com/tu_perfil" target="_blank" class="text-2xl transition-colors duration-300 hover:text-blue-500">
-          <i class="fab fa-instagram fa-lg"></i>
+        <a href="https://github.com/PradierLucas" target="_blank" class="text-2xl transition-colors p-2 duration-300 hover:text-blue-500">
+          <i class="fab fa-github fa-2xl"></i>
         </a>
-        <a href="https://https://web.whatsapp.com/" target="_blank" class="text-2xl transition-colors duration-300 hover:text-blue-500">
-          <i class="fab fa-whatsapp fa-lg"></i>
-        </a>
+        
+        
       
         
       </div>
@@ -220,6 +238,23 @@
   </footer>
   
  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = mobileMenu.querySelectorAll('a');
+  
+    // Abrir o cerrar el menú cajón
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+    // Cerrar el menú cuando se selecciona una opción
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
   
 </body>
 
