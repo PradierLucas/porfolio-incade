@@ -9,14 +9,16 @@
   .carousel-item.active {
     display: block;
   }
-header{
-  width: 100%;
-  z-index: 1;
-}
+
+
 
 footer {
   background-color: #000;
   transition: background-color 0.3s ease;
+  height: 150px;
+  align-content: center;
+
+  
 }
 
 footer:hover {
@@ -31,9 +33,10 @@ body{
   font-size: 15px;
   margin: 0;
   padding: 0;
+  
+  
 }
 
-  
   header {
     background-color: black;
     color: white;
